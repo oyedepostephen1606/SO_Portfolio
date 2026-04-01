@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stephen Oyedepo | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loader">
+        <div class="spinner"></div>
+        <h2 class="loader-text">Stephen Oyedepo</h2>
+    </div>
+
+    <div id="particles-js"></div>
+
+    <nav>
+        <div class="logo">SO.</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="theme-toggle"><i class="fas fa-moon"></i></button>
+    </nav>
+
+    <a href="https://wa.me/2348165978321" class="floating-wa" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <header id="home">
+        <div class="hero-content" data-aos="fade-up">
+            <h1>Hi, I'm <span class="highlight">Stephen Oyedepo</span></h1>
+            <h2><span class="typing"></span></h2>
+            <p>Creating modern visual experiences and impactful branding identities.</p>
+            <a href="#projects" class="btn">VIEW MY WORK</a>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text" data-aos="fade-right">
+                    <h2>About Me</h2>
+                    <p>I am Stephen Oyedepo, a passionate graphic designer focused on creating visually appealing designs that communicate brand messages effectively. Alongside design, I am currently studying nursing, combining creativity with a passion for helping people, and also a lover of Christ.</p>
+                    
+                    <div class="stats">
+                        <div class="stat-box"><h3>50+</h3><p>Clients</p></div>
+                        <div class="stat-box"><h3>40+</h3><p>Highly Satisfied</p></div>
+                        <div class="stat-box"><h3>100%</h3><p>Dedication</p></div>
+                    </div>
+                </div>
+                <div class="about-image" data-aos="zoom-in">
+                    <img src="images/profile.jpg" alt="Stephen Oyedepo">
+                </div>
+            </div>
+
+            <div class="skills-section" data-aos="fade-up">
+                <h3>What I Do Best</h3>
+                <div class="skill-bar"><span class="skill-name">Brand Identity Design</span><div class="bar"><div class="fill" style="width: 95%;"></div></div><span class="percent">95%</span></div>
+                <div class="skill-bar"><span class="skill-name">Social Media Design</span><div class="bar"><div class="fill" style="width: 90%;"></div></div><span class="percent">90%</span></div>
+                <div class="skill-bar"><span class="skill-name">Church Flyer Design</span><div class="bar"><div class="fill" style="width: 90%;"></div></div><span class="percent">90%</span></div>
+                <div class="skill-bar"><span class="skill-name">Creative Direction</span><div class="bar"><div class="fill" style="width: 85%;"></div></div><span class="percent">85%</span></div>
+                <div class="skill-bar"><span class="skill-name">Logo Design</span><div class="bar"><div class="fill" style="width: 88%;"></div></div><span class="percent">88%</span></div>
+                <div class="skill-bar"><span class="skill-name">Adobe Photoshop</span><div class="bar"><div class="fill" style="width: 92%;"></div></div><span class="percent">92%</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2 data-aos="fade-down">My Projects</h2>
+            <div class="filter-buttons" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="church">Church Flyers</button>
+                <button class="filter-btn" data-filter="social">Social Media</button>
+                <button class="filter-btn" data-filter="tutorial">Tutorial Branding</button>
+            </div>
+
+            <div class="project-grid">
+                <div class="project-card 3d-card church" data-aos="fade-up">
+                    <img src="images/church1.jpg" alt="Church Design" onclick="openLightbox(this.src)">
+                    <div class="overlay"><h4>Church Flyer</h4></div>
+                </div>
+                <div class="project-card 3d-card social" data-aos="fade-up" data-aos-delay="100">
+                    <img src="images/social1.jpg" alt="Social Media" onclick="openLightbox(this.src)">
+                    <div class="overlay"><h4>Social Media Flyer</h4></div>
+                </div>
+                <div class="project-card 3d-card tutorial" data-aos="fade-up" data-aos-delay="200">
+                    <img src="images/tut1.jpg" alt="Tutorial Branding" onclick="openLightbox(this.src)">
+                    <div class="overlay"><h4>Tutorial Branding</h4></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews">
+        <div class="container" data-aos="fade-in">
+            <h2>Client Reviews</h2>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide review-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"Stephen completely transformed our brand identity. His work is top-notch and professional!"</p>
+                        <h4>- Client 1</h4>
+                    </div>
+                    <div class="swiper-slide review-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"The church flyers he designed were beautiful and caught everyone's attention. Highly recommended."</p>
+                        <h4>- Client 2</h4>
+                    </div>
+                    <div class="swiper-slide review-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"Exceptional creativity! He listens to what you need and delivers beyond expectations."</p>
+                        <h4>- Client 3</h4>
+                    </div>
+                    <div class="swiper-slide review-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"Very fast delivery and amazing communication. Will definitely hire again."</p>
+                        <h4>- Client 4</h4>
+                    </div>
+                    <div class="swiper-slide review-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"The online tutorial branding gave my course the premium look it needed. Thank you, Stephen!"</p>
+                        <h4>- Client 5</h4>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2 data-aos="fade-down">Let's Work Together</h2>
+            <p class="contact-sub" data-aos="fade-up">If you need creative graphics, branding or social media designs feel free to reach out. I'm always excited to collaborate on new and interesting projects.</p>
+            
+            <div class="contact-grid">
+                <div class="social-links" data-aos="fade-right">
+                    <a href="https://wa.me/2348165978321" target="_blank" class="social-btn"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                    <a href="mailto:oyedepostephen1606@gmail.com" class="social-btn"><i class="fas fa-envelope"></i> Email</a>
+                    <a href="https://www.instagram.com/stephen.oyedepo" target="_blank" class="social-btn"><i class="fab fa-instagram"></i> Instagram</a>
+                    <a href="https://www.facebook.com/profile.php?id=100060801882848" target="_blank" class="social-btn"><i class="fab fa-facebook"></i> Facebook</a>
+                    <a href="https://www.tiktok.com/@oyedepostephen1606" target="_blank" class="social-btn"><i class="fab fa-tiktok"></i> TikTok</a>
+                </div>
+                
+                <form id="contact-form" data-aos="fade-left">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                    <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn">Send via WhatsApp</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
